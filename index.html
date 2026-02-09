@@ -121,7 +121,7 @@
                                                 src="${personaje.image}"
                                                 alt="${personaje.name}"
                                                 class="img-fluid"
-                                                style="max-width: 250px; border-radius: 20px; border:4px solid #ffc107; box-shadow 0 8px 20px rgba(0,0,0,0.3);"
+                                                style="max-width: 250px; border-radius: 20px; border:4px solid #ffc107; box-shadow: 0 8px 20px rgba(0,0,0,0.3);"
                                                 onerror="this.src='https://placehold.co/300x400?text=Imagen+no+disponible'"
                                             >
                                         </div>
@@ -132,7 +132,7 @@
                         `);
             } else {
               $("#resultado").html(
-                '<p style="color:red">Personaje "${nombre}" no encontrado. <br>Prueba con: luke, vader, yoda, etc.</p>',
+                `<p style="color:red">Personaje "${nombre}" no encontrado. <br>Prueba con: luke, vader, yoda, etc.</p>`,
               );
             }
           },
